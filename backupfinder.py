@@ -67,7 +67,7 @@ async def check_urls(input_file, output_file):
         print(f"\nResults saved to {output_file}")
 
 def main():
-    parser = argparse.ArgumentParser(description="Check URL existence.")
+    parser = argparse.ArgumentParser(description="Check URL Backup Existence.")
     parser.add_argument("input_file", help="Input file containing domain names")
     parser.add_argument("output_file", help="Output file to save existing URLs")
     
