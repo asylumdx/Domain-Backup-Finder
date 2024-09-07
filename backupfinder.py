@@ -47,7 +47,6 @@ async def check_urls(input_file, output_file):
     total_urls = len(domains) * len(FILE_EXTENSIONS) * 2 
 
     async with httpx.AsyncClient() as client:
-        # Initialize the progress bar
         with tqdm(total=total_urls, desc="Checking URLs", unit="URL") as progress_bar:
             for i in range(0, len(domains), BATCH_SIZE):
                 urls_batch = []
